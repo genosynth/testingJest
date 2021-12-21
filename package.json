@@ -1,0 +1,23 @@
+{
+  "name": "testingJest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/genosynth/testingJest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/genosynth/testingJest/issues"
+  },
+  "homepage": "https://github.com/genosynth/testingJest#readme",
+  "devDependencies": {
+    "jest": "^27.4.5"
+  }
+}
