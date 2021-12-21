@@ -26,5 +26,9 @@ test('caesarCipher', () => {
   expect(caesarCipher(1,"zxy Wx")).toBe("ayz Xy");
   expect(caesarCipher(1,"a-A-b-B & C")).toBe("b-B-c-C & D");
   expect(caesarCipher(22,"Fu#k me, hard")).toBe("Bq#g ia, dwnz");
-  expect(caesarCipher(12,"Ejja itfani mal-art baby.")).toBe("Qvvm ufrmzu ymx-mdf nmnk.");
+  expect(caesarCipher(12,"Ejja itfani mal-art.")).toBe("Qvvm ufrmzu ymx-mdf.");
+});
+
+test('analyzeArray', () => {
+  expect(assignment.analyzeArray([1,2,3,4,5,6])).toStrictEqual({"average":3.5, "min":1, "max":6, "length": 6})
 });

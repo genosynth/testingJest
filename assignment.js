@@ -31,8 +31,28 @@ const calculator = {
   multiplication: (x,y) => {return x*y}
 }
 
+function analyzeArray(array){
+  let sum=0;
+  array.forEach(element => {
+    sum+=element
+  });
 
-module.exports = { sum, capitalize, reverseString, calculator } 
+  let sortedArray = array.sort(function(a, b) {
+    return a - b;
+  });
+
+  let object = {
+    average: sum/array.length,    
+    min: sortedArray[0],
+    max: sortedArray[sortedArray.length-1],
+    length: array.length,
+  }
+
+  return object;
+}
+
+analyzeArray([2,3,4,5])
+module.exports = { sum, capitalize, reverseString, calculator, analyzeArray } 
 
 //MANUAL TESTING---------------
 //console.log(calculator.multiplication(1,2))
